@@ -3,9 +3,7 @@
 # PVA
 Python Virtual Assistant is a simple assistant based on python
 
-
-A pytho
-Author: JoeVenner](mailto:ylafrimi@gmail.com).
+Author: [JoeVenner](mailto:ylafrimi@gmail.com).
 -------------
 # Installation
 
