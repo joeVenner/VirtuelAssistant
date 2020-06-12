@@ -1,7 +1,7 @@
 ![Logo](https://i.ibb.co/pKwVbFQ/Coffee-Tutorial-You-Tube-Thumbnail.png)
 
 # PVA
-Python Virtual Assistant is a simple assistant based on python
+Python Virtual Assistant Using Voice Recognition based on Python 3
 
 Author: [JoeVenner](mailto:ylafrimi@gmail.com).
 -------------
@@ -31,4 +31,9 @@ Example
   can you open gmail
   can you open pubg 
   can you open facebook
+```
+
+```
+Youtube Tuto : https://www.youtube.com/watch?v=eJT75-pbNLE
+
 ```
