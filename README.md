@@ -33,7 +33,6 @@ Example
   can you open facebook
 ```
 
-```
-Youtube Tuto : https://www.youtube.com/watch?v=eJT75-pbNLE
+Youtube Tuto : [Make Your Own VA Python](https://www.youtube.com/watch?v=eJT75-pbNLE).
+-------------
 
-```
