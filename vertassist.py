@@ -69,18 +69,19 @@ def assistant(query):
         speak("Done Sir, Anything Else !")
 
 
+        # I would recommend u to change your syntax from subprocess.Popen to subprocess.call
     elif "spotify" in query :
         speak("Opening Spotify")
-        subprocess.Popen(["C:\\Users\\Joe\\AppData\\Roaming\\Spotify\\Spotify.exe"])
-
+        subprocess.call(["C:\\Users\\Joe\\AppData\\Roaming\\Spotify\\Spotify.exe"])
+# just like this
         speak("Spotify Opened , Anything Else Sir")
 
 
     elif "pubg" in query :
         speak("Let's go")
         #set your own pubg path or every game you want
-        result = subprocess.Popen(["D:\program files\\txgameassistant\AppMarket\AppMarket.exe"  ,'-startpkg com.tencent.ig'  ,'-from DesktopLink'], shell=True)
-
+        result = subprocess.call(["D:\program files\\txgameassistant\AppMarket\AppMarket.exe"  ,'-startpkg com.tencent.ig'  ,'-from DesktopLink'], shell=True)
+# here also
         speak("Done Sir, Anything Else !")
 
     elif "open" in query :
@@ -94,8 +95,8 @@ def assistant(query):
 
     elif "bye" in query :
         speak(f"My pleasure to help you {MASTER}, See you later")
-        return 0
-
+     
+    
 
     else:
         speak("I am not able to do this !")
