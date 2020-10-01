@@ -67,6 +67,12 @@ def assistant(query):
         speak(results)
 
         speak("Done Sir, Anything Else !")
+   elif 'open google' in query:
+        speak('opening google sir')
+        webbrowser.open("google.com") 
+    elif 'open youtube' in query:
+             speak('opening youtube sir')
+             webbrowser.open("youtube.com")     
 
 
     elif "spotify" in query :
