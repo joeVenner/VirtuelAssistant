@@ -5,7 +5,7 @@ import wikipedia
 import webbrowser
 import pyaudio
 import subprocess
-
+import smtplib
 
 
 MASTER = "Yassir"
@@ -50,6 +50,14 @@ speak("Initializing ...")
 wishme()
 speak(f"{MASTER} What do you want me to do for you : ")
 
+def sendEmail(to, content):
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.ehlo()
+    server.starttls()
+    server.login('youremail@gmail.com', 'your-password')
+    server.sendmail('youremail@gmail.com', to, content)
+    server.close()
+
 
 def assistant(query):
 
@@ -90,11 +98,26 @@ def assistant(query):
             speak(website[website.index("open")+1] + "is Opened ")
         except Exception as e :
             speak("i can't see it")
+            
+    elif 'open code' in query:
+        codePath = "C:\\Users\\Haris\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+        os.startfile(codePath)
 
 
     elif "bye" in query :
         speak(f"My pleasure to help you {MASTER}, See you later")
         return 0
+    
+    elif 'email to harry' in query:
+            try:
+                speak("What should I say?")
+                content = takeCommand()
+                to = "harryyourEmail@gmail.com"    
+                sendEmail(to, content)
+                speak("Email has been sent!")
+            except Exception as e:
+                print(e)
+                speak("Sorry my friend harry bhai. I am not able to send this email")  
 
 
     else:
